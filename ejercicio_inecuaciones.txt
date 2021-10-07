@@ -1,0 +1,23 @@
+%Inecuación de primer grado con una incognita 
+disp("Resultado de primer inecuación")
+syms x;
+solve(x<-7)
+%Grafica de primer inecuacón 
+x=[-20 15]
+y=x+7
+plot(x,y,'ro-')
+hold on 
+plot([-20 15],[0,0],'k+-')
+plot([0 0],[-20,30],'k-')
+plot(x,sign(y)*5,'bs-')
+
+%Inecuación de segundo grado con una incognita 
+disp("Reslutado de segunda inecuacion")
+syms x;
+solve(x^2+3*x<2)
+%Grafica segunda inecuion 
+x=[-2 2];
+y=x+(-2)
+hold on 
+plot(x,y,'ro-')
+plot(x,sign(y)*-2,'bs-')
